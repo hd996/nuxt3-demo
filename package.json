@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@intlify/nuxt3": "^0.1.4",
+    "@nuxtjs/eslint-config": "^7.0.0",
+    "@nuxtjs/eslint-config-typescript": "^7.0.2",
+    "@types/config": "^0.0.39",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nuxt3": "^3.0.0-27284664.232fdd8",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "element-plus": "^1.2.0-beta.3",
+    "mysql2": "^2.3.3-rc.0",
+    "sequelize": "^6.9.0"
+  }
+}
