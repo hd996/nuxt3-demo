@@ -9,11 +9,18 @@
       <label>I18n: </label>
       <I18n />
     </div>
+
+    <div class="item">
+      <label>Data Fetch: </label>
+      <div>{{ data }}</div>
+    </div>
   </div>
 </template>
 <script setup>
 import Element from '@/components/Element.vue'
 import I18n from '@/components/I18n.vue'
+
+const { data } = await useAsyncData('user', () => $fetch('/api/user'))
 </script>
 
 <style lang="scss" scoped>
